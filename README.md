@@ -28,3 +28,16 @@ cat /etc/os-release
 ```
 
 - Ubuntu 25.04 (debian)
+
+### CPU  
+
+``` shell
+lscpu
+
+cat /proc/cpuinfo
+``` 
+
+CPU core : 8  
+Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz  
+
+### RAM  
