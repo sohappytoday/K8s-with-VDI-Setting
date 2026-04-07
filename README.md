@@ -31,7 +31,7 @@ cat /etc/os-release
 
 ### CPU  
 
-``` shell
+```shell
 lscpu
 
 cat /proc/cpuinfo
@@ -40,4 +40,22 @@ cat /proc/cpuinfo
 CPU core : 8  
 Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz  
 
-### RAM  
+### Disk 
+
+```shell
+df -h
+```
+
+Total : 92 GiB (100 GB)  
+Available : 71 GiB  
+
+### RAM
+
+```shell
+free -h
+```
+
+5.1 GiB  
+---
+
+ 
