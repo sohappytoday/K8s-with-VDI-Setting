@@ -61,6 +61,22 @@ free -h
 
 ## Environment Setup
 
+### port
+
+```shell
+sudo ufw allow [port]
+```
+
+- 22 : ssh
+- 3000 : React
+- 8080 : Spring Boot
+- 8081 : Spring Boot (Blue-Green Deployment)
+- 8888 : Jupyter Notebook
+
+---
+
+## Installation
+
 ### Git
 
 ```shell
@@ -77,6 +93,7 @@ docker --version
 
 Docker version 29.2.1  
 
-### java
+---
+
 
 
