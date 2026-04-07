@@ -8,8 +8,8 @@
 ## Index  
 
 - [VDI Performance](#vdi-performance)
-- [Environment Setup](#Environment Setup) 
-- [Installation](#Installation)
+- [Environment Setup](#environment-setup) 
+- [Installation](#installation)
 ---
 
 ## VDI Performance  
@@ -56,6 +56,27 @@ free -h
 ```
 
 5.1 GiB  
+
 ---
 
- 
+## Environment Setup
+
+### Git
+
+```shell
+git --version
+```
+
+git version 2.48.1  
+
+### Docker
+
+```shell
+docker --version
+```
+
+Docker version 29.2.1  
+
+### java
+
+
