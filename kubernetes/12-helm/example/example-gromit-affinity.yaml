@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geo-is-best
+  labels:
+    app: geo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: geo
+  template:
+    metadata:
+      labels:
+        app: geo
+    spec:
+      affinity:
+        podAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchLabels:
+                  app: geo
+              topologyKey: kubernetes.io/hostname
+      containers:
+      - name: geo-container
+        image: nginx:1.25.5
+        ports:
+        - containerPort: 8080
